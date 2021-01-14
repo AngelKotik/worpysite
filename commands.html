@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/angelkotik/Desktop/Chip%20-%20Commands.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Worpy - Commands</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta content="#FF7104" name="theme-color">
+<meta content="https://cdn.discordapp.com/avatars/614109280508968980/208c1c61c1a7794579f77e7b9f6f764c.png" property="og:image">
+<meta content="The home of Chip, a high quality music bot." name="description">
+<link rel="shortcut icon" type="image/png" href="./chip_logo.png">
+<link href="./tailwind.min.css" rel="stylesheet">
+<script src="./alpine.min.js" defer=""></script>
+<style>
+	.dark {
+        background: #1A202C;
+    }
+
+    .not-as-dark {
+        background: #2C2F33;
+    }
+
+    .side-shadow {
+        box-shadow: 5px 0 11px -3px rgba(0, 0, 0, 0.85);
+    }
+
+    .focus-shadow {
+        box-shadow: 8px 8px 5px -4px rgba(0, 0, 0, 0.75);
+    }
+
+    .gradient {
+        background: linear-gradient(150deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+	    .backgradient {
+        background: linear-gradient(#404040, #cd1c4a, #e63535, #353535, #101010);
+    }
+</style></head>
+
+<body class="h-screen w-screen flex backgradient">
+<div class="fixed md:flex md:flex-row md:min-h-screen w-full" id="sidenav">
+
+<div class="justify-center w-screen overflow-y-auto h-screen" id="main">
+<div class="center-content-center text-white font-bold text-2xl">
+<div class="block">
+<div class="text-white font-bold text-2xl">
+
+<div class="flex justify-center w-full">
+<div class="py-4 w-full" id="main-commands">
+<h1 class="block cursor-default text-white text-5xl text-center font-bold py-4">Main
+Commands</h1>
+<div class="block w-full mb-4">
+<div class="h-1 mx-auto w-4/6 gradient opacity-1 my-0 py-0 rounded-full "></div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 py-2 cursor-default">
+<div class="rounded-md pb-8 not-as-dark">
+<div class="flex justify-around">
+<div class="w-full lg:w-1/6 text-white px-4 py-2 text-2xl font-semibold">Command</div>
+<div class="w-0 lg:w-3/6 hidden lg:block text-white px-4 py-2 text-2xl font-semibold">
+Description</div>
+
+</div>
+<div class="block w-full mb-4">
+<div class="h-1 mx-auto w-full bg-white opacity-1 my-0 py-0 rounded-full"></div>
+</div>
+<div class="w-full">
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/lyrics
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+shows the lyrics to the currently-playing song</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/nowplaying
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+shows the song that is currently playing</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/play
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+plays the provided song</div>
+
+</div>
+
+</div>
+
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/playlists
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+shows the available playlists</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/queue
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+shows the current queue</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/remove
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+removes a song from the queue</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/search
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+ </svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+searches Youtube for a provided query</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/scsearch
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+searches Soundcloud for a provided query</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/shuffle
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+shuffles songs you have added</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/skip
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+votes to skip the current song</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/forceremove
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+removes all entries by a user from the queue</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/forceskip
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+skips the current song</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/movetrack
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+move a track in the current queue to a different position</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/pause
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+pauses the current song</div>
+
+</div>
+
+ </div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/playnext
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+plays a single song next</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/repeat
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+re-adds music to the queue when finished</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/skipto
+ <svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+skips to the specified song</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/stop
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+stops the current song and clears the queue</div>
+
+</div>
+
+</div>
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+<div class="flex justify-around z-10">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 lg:text-xl md:text-lg sm:text-base font-semibold text-white px-4 py-2">
+/volume
+<svg class="lg:hidden inline-block float-right fill-current h-8 w-8 transform transition duration-150 ease-in-out rotate-me -rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" color="#FFFFFF">
+<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+</path>
+</svg>
+</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 lg:text-lg md:text-base sm:text-sm font-semibold text-white px-4 py-2">
+sets or shows volume</div>
+
+</div>
+
+</div>
+
+<div class="block cursor-pointer transition duration-150 ease-in-out z-30" onclick="toggleRotate(this)">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+<div class="py-4"></div>
+<div class="py-4 w-full" id="misc-commands">
+<h1 class="block text-white text-5xl text-center font-bold py-4">Misc Commands</h1>
+<div class="block w-full mb-4">
+<div class="h-1 mx-auto w-4/6 gradient opacity-1 my-0 py-0 rounded-full"></div>
+</div>
+</div>
+<div class="rounded-md pb-8 not-as-dark">
+<div class="flex justify-center w-full">
+</div>
+<div class="flex justify-around">
+<div class="w-full lg:w-1/6 text-white px-4 py-2 text-2xl font-semibold">Command</div>
+<div class="w-0 lg:w-3/6 hidden lg:block text-white px-4 py-2 text-2xl font-semibold">
+Description</div>
+
+</div>
+<div class="block w-full mb-4">
+<div class="h-1 mx-auto w-full bg-white opacity-1 my-0 py-0 rounded-full"></div>
+</div>
+<div class="w-full">
+<div class="flex justify-around">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 text-xl font-semibold text-white px-4 py-2">
+/prefix</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 text-lg font-semibold text-white px-4 py-2">
+sets a server-specific prefix</div>
+
+</div>
+<div class="flex justify-around">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 text-xl font-semibold text-white px-4 py-2">
+/setdj</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 text-lg font-semibold text-white px-4 py-2">
+sets the DJ role for certain music commands</div>
+
+</div>
+<div class="flex justify-around">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 text-xl font-semibold text-white px-4 py-2">
+/settc</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 text-lg font-semibold text-white px-4 py-2">
+sets the text channel for music commands</div>
+
+</div>
+<div class="flex justify-around">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 text-xl font-semibold text-white px-4 py-2">
+/setvc</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 text-lg font-semibold text-white px-4 py-2">
+sets the voice channel for playing music</div>
+
+</div>
+<div class="flex justify-around">
+ <div class="w-full lg:w-1/6 border-gray-800 border-b-2 text-xl font-semibold text-white px-4 py-2">
+/about</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 text-lg font-semibold text-white px-4 py-2">
+shows info about the bot</div>
+
+</div>
+<div class="flex justify-around">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 text-xl font-semibold text-white px-4 py-2">
+/ping</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 text-lg font-semibold text-white px-4 py-2">
+checks the bot's latency</div>
+
+
+</div>
+<div class="flex justify-around">
+<div class="w-full lg:w-1/6 border-gray-800 border-b-2 text-xl font-semibold text-white px-4 py-2">
+/settings</div>
+<div class="w-0 lg:w-1/2 hidden lg:block border-gray-800 border-b-2 text-lg font-semibold text-white px-4 py-2">
+shows the bots settings</div>
+
+
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>
